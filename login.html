@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<!-- body -->
+
+<body>
+     <!-- header -->
+     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="home.html"><img src="images/logo.PNG" width="50%"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerDiv"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="headerDiv">
+
+                <script> generateHeader()</script>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- END header -->
+    <!-- banner -->
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_21.jpg');"
+        data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-9 ftco-animate text-center">
+                    <p class="breadcrumbs mb-2"><span class="mr-2"><a href="home.html">Home <i
+                                    class="fa fa-chevron-right"></i></a></span> <span>Login <i
+                                class="fa fa-chevron-right"></i></span></p>
+                    <h1 class="mb-0 bread">Login</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END banner -->
+    <!--  Login  -->
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-12">
+                    <div class="wrapper">
+                        <div class="row no-gutters">
+                            <div class="col-lg-8 col-md-7 d-flex align-items-stretch">
+                                <div class="contact-wrap w-100 p-md-5 p-4">
+                                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                        <div class="row" style="margin-top: 10%;">
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input class="form-control" placeholder="Email" type="email"
+                                                        id="emailValue">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input class="form-control" placeholder="Password" type="password"
+                                                        id="pwdValue">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <span id="loginError"></span>
+                                                <div class="form-group">
+                                                    <a type="submit" style="color: blanchedalmond;"
+                                                        class="btn btn-primary" onclick="login()">Login</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+								<div class="info-wrap  h-100 w-100 p-4"
+									style="background-image: url('images/login.jpg');opacity: .9;">
+									<div class="card-img-overlay" style=" margin-top: 15%; text-align: center;">
+										
+                                        <h3>You don't have an account?</h3>
+                                        <div class="form-group">
+                                            <h5 style="color:  black; ;">Signup as an
+
+                                                <a href="signupOwner.html" type="submit" class="btn btn-info"
+                                                    style="color: blanchedalmond;">
+                                                    Owner</a>
+
+                                            </h5>
+                                            <h5 style="color:  black; "> or a
+
+                                                <a href="signupClient.html" type="submit" class="btn btn-info"
+                                                    style="color: blanchedalmond;">
+                                                    Client</a>
+                                            </h5>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end Login-->
+   <!--  footer -->
+   <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <img src="images/logo.png" width="250px">
+            </div>
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading">Services</h2>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="py-1 d-block">Map Direction</a></li>
+                    <li><a href="#" class="py-1 d-block">Accomodation Services</a></li>
+                    <li><a href="#" class="py-1 d-block">Great Experience</a></li>
+                    <li><a href="#" class="py-1 d-block">Perfect central location</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading">Tag cloud</h2>
+                <div class="tagcloud">
+                    <a href="#" class="tag-cloud-link">apartment</a>
+                    <a href="#" class="tag-cloud-link">home</a>
+                    <a href="#" class="tag-cloud-link">vacation</a>
+                    <a href="#" class="tag-cloud-link">rental</a>
+                    <a href="#" class="tag-cloud-link">rent</a>
+                    <a href="#" class="tag-cloud-link">house</a>
+                    <a href="#" class="tag-cloud-link">place</a>
+                    <a href="#" class="tag-cloud-link">guest</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+
+                <h2 class="footer-heading ">Follow us</h2>
+                <ul class="ftco-footer-social p-0">
+                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top"
+                            title="Twitter"><span class="fa fa-twitter"></span></a></li>
+                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top"
+                            title="Facebook"><span class="fa fa-facebook"></span></a></li>
+                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top"
+                            title="Instagram"><span class="fa fa-instagram"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="w-100 mt-5 border-top py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-8">
+
+                    <p class="copyright mb-0 ">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <div style="margin-left: 35%;" class="col-md-12"> Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | This template is made with
+                        <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                            target="_blank">Colorlib.com</a>
+                    </div>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+            stroke="#F96D00" />
+    </svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
